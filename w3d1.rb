@@ -40,18 +40,24 @@ class Array
         true
     end
 
-    def my_flatten(array)
-        result = []
-        if array.is_a?(Array)
+    # def my_flatten
+    #     result = []
+    #     return self if !self.is_a?(Array)
 
-            array.each do |array|
-                my_flatten(array)
-            end
-        else
-            result << array
-        end
+    #     self.each do |array|
+    #         my_flatten
+    #     end
+    
+    #     result << self
+       
 
-        result
+    #     result
+    # end
+
+
+    def my_zip(*args)
+        
+
     end
 end
 
